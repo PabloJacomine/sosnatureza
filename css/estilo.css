@@ -1,0 +1,288 @@
+﻿.body {
+    height:1080px;
+    width: 1080px;
+    background-color: white;
+    color: black;
+    padding: 0px 200px;
+    border: 2px;
+}
+
+.bordas {
+    height:920px;
+    width: 1080px;
+    background-color: white;
+    color: black;
+    padding: 0px 200px;
+    border: 2px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Segoe UI, helvetica, sans-serif;
+}
+
+input {
+    background-color: #C3C3C3;
+}
+/*formatacao da classe menu*/
+.menu {
+	margin: auto;
+	background:green;
+}
+
+.mainHeader {
+	margin-top: 0 px;
+}
+
+.img_menu {
+    position: absolute;
+    left: 40%;
+    top; 70px;
+    border-radius: 30px;
+}
+
+#button {
+    position: absolute;
+    left: 82%;
+    top: 30px;
+}
+
+.input {
+    position: absolute;
+    left: 85%;
+    top: 30px;
+}
+/*tamanho do preenchimento do menu*/
+.box960 {
+    padding: 20px;
+} 
+
+.menu ul {
+	margin: 0; 
+	padding: 0;
+	
+	/*fonte e tamanho do menu*/
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	background-color:#EDEDED;
+	/* retira os bullets do menu primeiro nivel*/
+	list-style:none;
+	/*border:1px solid #000;*/
+	/*propriedade de posicionamento, troque para right e veja o que acontece*/ 
+	float:left;
+  
+}
+
+/*formatacao das listas (li) do menu*/
+.menu li{
+  position:relative; /* ver o que faz position relative*/
+  float:left; /* posicionamento a esquerda*/
+  border-right:1px solid #000; /*definindo uma borda somente a margem esquerda*/
+}
+
+/*formatando os links do menu*/
+.menu li a{
+	color:#000; /*letras do menu, cor preta */ 
+	text-decoration:none; /* retira o sublinhado do link */
+	padding:5px 10px; /*define uma margin interna cima/embaixo e esquerda/direita */
+	display:block; /* propriedade importante para submenu*/
+}
+
+.menu li a:hover{
+	background:#000; /*cor de fundo preta*/
+	color:#fff; /*cor de letra branca*/
+	background-color:#D6D6D6;
+	font-size: 14px;
+	border-bottom:3px solid olive;
+}
+
+/* agora precisamos esconder o segundo nivel da lista, 
+aqui ainda nÃ£o funciona o clique no link */
+.menu li  ul{
+  position:absolute;
+  top:25px; /*a partir da opção do nivel acima distancia 25px para baixo*/
+  left:0; /* a partir da opção do nivel acima 0px a esquerda*/
+  display:none; /*esconde o submenu*/
+} 
+
+/* aqui eh o pulo do gato, aqui que fazemos
+o submenu aparecer no clique*/
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+
+.menu li ul li{
+  border:1px solid #000; 
+  display:block; 
+  width:200px; /* largura da borda da dos itens do submenu */
+  z-index: 10;
+}
+
+h2 h1 {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+p {
+    padding: 20px;
+}
+
+.space {
+    padding: 10px;
+}
+
+.img_menu {
+    position: relative;
+}
+
+/*teste de preenchimento de espaço */
+.preencher {
+    padding: 20px;
+    border: 2px;
+}
+
+/* SLIDES */
+.slide-home {
+	position: relative;
+	margin-top: 50px;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: white;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 8;
+}
+
+.img {
+    width: 100%;
+    height: 250px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+/* FIM DOS SLIDES */
+
+
+/* SECTION */
+.secaoIndex {
+	margin: 5px;
+	padding: 15px;
+}
+
+.secaoIndex h2 {
+	text-align: center;
+}
+
+
+#tamanho_menu {
+    width: 100%;
+    padding: 0% 25%;
+}
+
+.secaoIndex img {
+	width: 300px;
+	height: 200px;
+	margin-left: 10px;
+	position: left;
+	
+}
+
+.secaoIndex nav {
+	margin: 20px 0px 10px 0px;
+}
+
+.secaoIndex nav div {
+	width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align:center;
+  color: white;
+}
+
+.secaoIndex button {
+	border: 0;
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.secaoIndex button a {
+	text-decoration:none;
+	color: black;
+}
+
+.secaoIndex button a:hover {
+	color: olive;
+}
+
+.footer {
+	background: green;
+    padding: 60px;
+    clear: both;
+}
+
+.footer p {
+	text-align: center;
+}

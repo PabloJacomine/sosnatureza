@@ -1,0 +1,67 @@
+.bodys {
+    height:1400px;
+    width: 1080px;
+    background-color: white;
+    color: black;
+    padding: 0px 200px;
+    border: 2px;
+}
+
+.bodyss {
+    height:800px;
+    width: 1080px;
+    background-color: white;
+    color: black;
+    padding: 0px 200px;
+    border: 2px;
+}
+
+form {
+    width:500px;
+    height:200px;
+    display: block;
+}
+
+input {
+    display: ;
+}
+
+.enviar {
+    text-align: center;
+    font-size: 20px;
+    object-position: center;
+    object-position: right;
+    background-color: #C3C3C3;
+    position: absolute;
+    left: 45%;
+}
+
+.enviar2 {
+    text-align: center;
+    font-size: 20px;
+    object-position: center;
+    object-position: right;
+    background-color: #C3C3C3;
+    position: absolute;
+    left: 20%;
+}
+
+h2 {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.preencher {
+    padding: 0px;
+}
+
+.paypal {
+    position: absolute;
+    left:45%
+}
+
+.p_paypal {
+    position: absolute;
+    left: 40%
+}
